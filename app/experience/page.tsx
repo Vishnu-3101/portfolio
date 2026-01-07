@@ -1,12 +1,12 @@
 import { Sidebar } from "@/components/sidebar";
-import { MainContent } from "@/components/main-content";
+import { ExperienceContent } from "@/components/experience-content";
 import { Footer } from "@/components/footer";
 
-export default function Home() {
+export default function ExperiencePage() {
   return (
     <div className="min-h-screen bg-gray-100">
-      <Sidebar activePage="/" />
-      <MainContent />
+      <Sidebar activePage="/experience" />
+      <ExperienceContent />
       <Footer />
     </div>
   );

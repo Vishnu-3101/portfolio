@@ -1,12 +1,12 @@
 import { Sidebar } from "@/components/sidebar";
-import { MainContent } from "@/components/main-content";
+import { BlogsContent } from "@/components/blogs-content";
 import { Footer } from "@/components/footer";
 
-export default function Home() {
+export default function BlogsPage() {
   return (
     <div className="min-h-screen bg-gray-100">
-      <Sidebar activePage="/" />
-      <MainContent />
+      <Sidebar activePage="/blogs" />
+      <BlogsContent />
       <Footer />
     </div>
   );
