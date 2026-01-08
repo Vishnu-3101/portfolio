@@ -1,6 +1,35 @@
 import { BlogCard } from "./blog-card";
-import { posts } from "@/lib/blogs";
 
+const posts = [
+  {
+    id: "part-4",
+    title: "Part 4: From Retrieved Context to a Grounded Answer",
+    description: "Why good retrieval still produces bad answers, and where most systems actually fail.",
+    href: "/blogs/part-4-retrieved-context",
+    imageTitle: "Part 4: From Retrieved Context to a Grounded Answer",
+  },
+  {
+    id: "part-3",
+    title: "Part 3: Retrieval Is Not Top-K",
+    description: "Relevance, diversity, reranking, and why most systems return the wrong things for the right reasons.",
+    href: "/blogs/part-3-retrieval-not-top-k",
+    imageTitle: "Part 3: Retrieval Is Not Top-K",
+  },
+  {
+    id: "embeddings",
+    title: "Embeddings: Turning Meaning Into Geometry",
+    description: "Intuition and practical tips for using embeddings in real-world systems.",
+    href: "/blogs/embeddings-meaning-geometry",
+    imageTitle: "Embeddings: Turning Meaning Into Geometry",
+  },
+  {
+    id: "how-embeddings-work",
+    title: "How Embeddings Actually Work in Practice",
+    description: "A practical overview of embedding creation, scaling, and retrieval tradeoffs.",
+    href: "/blogs/how-embeddings-work",
+    imageTitle: "How Embeddings Actually Work in Practice",
+  },
+];
 
 export function BlogsContent() {
   return (
@@ -19,7 +48,7 @@ export function BlogsContent() {
               key={p.id}
               title={p.title}
               description={p.description}
-              href={`/blogs/${p.slug}`}
+              href={p.href}
               imageTitle={p.imageTitle}
             />
           ))}
