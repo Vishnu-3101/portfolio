@@ -41,7 +41,7 @@ const socialLinks = [
 
 export function Sidebar({ activePage = "/" }: SidebarProps) {
   return (
-    <aside className="fixed left-0 top-0 h-screen w-[20%] overflow-y-auto bg-white border-r border-gray-200 flex flex-col">
+    <aside className="fixed left-0 top-0 h-screen w-[16%] overflow-y-auto bg-white border-r border-gray-200 flex flex-col">
       {/* Profile Section */}
       <div className="p-6 border-b border-gray-200">
         <Avatar className="w-20 h-20 mx-auto mb-3">

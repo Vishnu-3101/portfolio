@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function MainContent() {
   return (
-    <main className="ml-[20%] min-h-screen bg-white overflow-y-auto pb-20">
+    <main className="ml-[16%] min-h-screen bg-white overflow-y-auto pb-20">
       <div className="max-w-4xl mx-auto px-8 py-12">
         {/* Hero Section */}
         <div className="mb-12">

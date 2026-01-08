@@ -41,7 +41,7 @@ const tools = [
 
 export function ToolsContent() {
   return (
-    <main className="ml-[20%] min-h-screen bg-white overflow-y-auto pb-20 flex flex-col items-center justify-center">
+    <main className="ml-[16%] min-h-screen bg-white overflow-y-auto pb-20 flex flex-col items-center justify-center">
       <div className="w-full max-w-2xl mx-auto pt-20 text-center">
         <h1 className="text-5xl font-bold mb-2">Shovels</h1>
         <p className="mb-10 text-gray-700">Tools I frequently use to make life easier</p>

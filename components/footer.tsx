@@ -123,7 +123,7 @@ export function Footer() {
   return (
     <footer
       className={cn(
-        "fixed bottom-0 left-0 right-0 ml-[20%] bg-white border-t border-gray-200 px-8 py-4 transition-transform duration-300 ease-in-out z-50",
+        "fixed bottom-0 left-0 right-0 ml-[16%] bg-white border-t border-gray-200 px-8 py-4 transition-transform duration-300 ease-in-out z-50",
         isVisible ? "translate-y-0" : "translate-y-full"
       )}
     >

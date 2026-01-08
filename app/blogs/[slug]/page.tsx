@@ -20,7 +20,7 @@ export default async function BlogPostPage({ params }: Props) {
     <div className="min-h-screen bg-gray-100">
       <Sidebar activePage="/blogs" />
 
-      <main className="ml-[20%] min-h-screen bg-white overflow-y-auto pb-20">
+      <main className="ml-[16%] min-h-screen bg-white overflow-y-auto pb-20">
         <div className="max-w-4xl mx-auto px-8 py-12">
           <a href="/blogs" className="text-sm text-gray-600 hover:underline">
             ← All Articles
