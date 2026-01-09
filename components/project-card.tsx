@@ -10,6 +10,7 @@ interface ProjectCardProps {
   tags?: string[];
   status?: "active" | "archived" | "personal";
   imageTitle?: string;
+  imageUrl?: string;
 }
 
 export function ProjectCard({
@@ -20,21 +21,26 @@ export function ProjectCard({
   tags = [],
   status = "personal",
   imageTitle = "Preview",
+  imageUrl,
 }: ProjectCardProps) {
+  const src = imageUrl ?? `https://picsum.photos/seed/${encodeURIComponent(title)}/1200/800`;
+
   return (
-    <Card className="border border-gray-200 hover:shadow-lg transition-shadow bg-white">
-      <CardContent className="p-6">
-        <div className="flex flex-col sm:flex-row gap-4">
-          {/* Thumbnail */}
-          <div className="flex-shrink-0 w-full sm:w-48 h-28 sm:h-28 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg flex items-center justify-center border border-gray-200 overflow-hidden">
-            <div className="text-sm sm:text-xs font-semibold text-gray-700">{imageTitle}</div>
+    <Card className="h-full border border-gray-200 hover:shadow-lg transition-shadow bg-white">
+      <CardContent className="p-0 h-full flex flex-col">
+        <div className="flex flex-col gap-0 items-stretch h-full">
+          {/* Thumbnail (always on top) */}
+          <div className="w-full flex-shrink-0 rounded-t-xl overflow-hidden">
+            <div className="aspect-[4/3] lg:aspect-[16/9] w-full h-full">
+              <img src={src} alt={imageTitle} className="w-full h-full object-cover" />
+            </div>
           </div>
 
           {/* Content */}
-          <div className="flex-1 flex flex-col justify-between">
+          <div className="flex-1 min-w-0 flex flex-col justify-between p-6">
             <div>
               <div className="flex items-start justify-between gap-4">
-                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-1 leading-tight">{title}</h3>
+                <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-1 leading-tight break-words">{title}</h3>
                 <div className="text-sm">
                   <span className={
                     `inline-flex items-center px-2 py-1 rounded-full text-xs font-medium ${
@@ -48,7 +54,7 @@ export function ProjectCard({
               <p className="text-base text-gray-600">{description}</p>
             </div>
 
-            <div className="mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+            <div className="mt-4 flex flex-col gap-3 md:flex-col md:items-center md:justify-between">
               <div className="flex gap-3">
                 <Link
                   href={href}

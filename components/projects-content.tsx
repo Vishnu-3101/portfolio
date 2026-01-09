@@ -39,7 +39,7 @@ export function ProjectsContent() {
           <p className="text-sm md:text-base text-gray-700 leading-relaxed">Playground — Small MVPs to production apps.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
           {projects.map((p) => (
             <ProjectCard
               key={p.id}

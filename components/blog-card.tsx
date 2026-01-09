@@ -7,40 +7,35 @@ interface BlogCardProps {
   description: string;
   href?: string;
   imageTitle?: string;
+  imageUrl?: string;
+  horizontal?: boolean; // when true the card becomes row on md+
 }
 
 export function BlogCard({ 
   title, 
   description, 
   href = "/blogs",
-  imageTitle = "REFLECTING ON 2025: A Personal Lookback"
+  imageTitle = "REFLECTING ON 2025: A Personal Lookback",
+  imageUrl,
+  horizontal = false,
 }: BlogCardProps) {
+  const src = imageUrl ?? `https://picsum.photos/seed/${encodeURIComponent(title)}/1200/800`;
+
   return (
-    <Card className="border border-gray-200 hover:shadow-lg transition-shadow bg-white">
-      <CardContent className="p-6">
-        <div className="flex gap-6">
+    <Card className="h-full border border-gray-200 hover:shadow-lg transition-shadow bg-white">
+      <CardContent className="p-0 h-full flex flex-col">
+        <div className={`flex flex-col ${horizontal ? 'md:flex-row' : ''} gap-0 items-stretch h-full`}>
           {/* Book Illustration */}
-          <div className="flex-shrink-0 w-32 h-40 bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg flex flex-col items-center justify-center border border-gray-200 relative overflow-hidden">
-            <BookOpen className="w-16 h-16 text-blue-400 mb-2 z-10" />
-            {/* Decorative elements */}
-            <div className="absolute top-2 left-2">
-              <Compass className="w-4 h-4 text-purple-300" />
+          <div className={`w-full ${horizontal ? 'md:w-40 lg:w-48' : ''} flex-shrink-0 rounded-t-xl ${horizontal ? 'md:rounded-l-xl md:rounded-tr-none' : ''} overflow-hidden`}>
+            <div className={`${horizontal ? 'aspect-[16/9] md:aspect-[3/2]' : 'aspect-[4/3] lg:aspect-[16/9]'} w-full h-full`}>
+              <img src={src} alt={imageTitle} className="w-full h-full object-cover" />
             </div>
-            <div className="absolute top-3 right-3">
-              <Moon className="w-4 h-4 text-blue-300" />
-            </div>
-            <div className="absolute bottom-3 left-4">
-              <Hourglass className="w-4 h-4 text-purple-300" />
-            </div>
-            <p className="text-xs font-semibold text-gray-700 mt-2 px-2 text-center z-10">
-              {imageTitle}
-            </p>
           </div>
 
           {/* Content */}
-          <div className="flex-1 flex flex-col justify-between">
+          <div className="flex-1 min-w-0 flex flex-col justify-between p-6">
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3 leading-tight">{title}</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3 leading-tight break-words">{title}</h3>
               <p className="text-base text-gray-600">{description}</p>
             </div>
             <Link

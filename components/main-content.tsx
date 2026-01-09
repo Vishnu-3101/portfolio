@@ -112,6 +112,7 @@ export function MainContent() {
             description="A candid review of 2025 into 2026."
             href="/blogs/2025-reflection"
             imageTitle="REFLECTING ON 2025: A Personal Lookback"
+            horizontal
           />
         </div>
       </div>
