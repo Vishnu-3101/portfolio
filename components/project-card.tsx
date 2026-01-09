@@ -24,17 +24,17 @@ export function ProjectCard({
   return (
     <Card className="border border-gray-200 hover:shadow-lg transition-shadow bg-white">
       <CardContent className="p-6">
-        <div className="flex gap-6">
+        <div className="flex flex-col sm:flex-row gap-4">
           {/* Thumbnail */}
-          <div className="flex-shrink-0 w-48 h-28 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg flex items-center justify-center border border-gray-200 overflow-hidden">
-            <div className="text-xs font-semibold text-gray-700">{imageTitle}</div>
+          <div className="flex-shrink-0 w-full sm:w-48 h-28 sm:h-28 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg flex items-center justify-center border border-gray-200 overflow-hidden">
+            <div className="text-sm sm:text-xs font-semibold text-gray-700">{imageTitle}</div>
           </div>
 
           {/* Content */}
           <div className="flex-1 flex flex-col justify-between">
             <div>
               <div className="flex items-start justify-between gap-4">
-                <h3 className="text-xl font-bold text-gray-900 mb-1 leading-tight">{title}</h3>
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-1 leading-tight">{title}</h3>
                 <div className="text-sm">
                   <span className={
                     `inline-flex items-center px-2 py-1 rounded-full text-xs font-medium ${
@@ -48,7 +48,7 @@ export function ProjectCard({
               <p className="text-base text-gray-600">{description}</p>
             </div>
 
-            <div className="mt-4 flex items-center justify-between">
+            <div className="mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
               <div className="flex gap-3">
                 <Link
                   href={href}

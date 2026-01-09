@@ -123,11 +123,11 @@ export function Footer() {
   return (
     <footer
       className={cn(
-        "fixed bottom-0 left-0 right-0 ml-[16%] bg-white border-t border-gray-200 px-8 py-4 transition-transform duration-300 ease-in-out z-50",
+        "fixed bottom-0 left-0 right-0 md:ml-[16%] ml-0 bg-white border-t border-gray-200 px-4 md:px-8 py-4 transition-transform duration-300 ease-in-out z-50",
         isVisible ? "translate-y-0" : "translate-y-full"
       )}
     >
-      <div className="max-w-4xl mx-auto flex items-center justify-between text-sm text-gray-600">
+      <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between text-sm text-gray-600 gap-2">
         {/* Left: Reach out link */}
         <Link
           href="/contact"

@@ -32,11 +32,11 @@ const projects = [
 
 export function ProjectsContent() {
   return (
-    <main className="ml-[16%] min-h-screen bg-white overflow-y-auto pb-20">
-      <div className="max-w-6xl mx-auto px-8 py-12">
+    <main className="md:ml-[16%] ml-0 min-h-screen bg-white overflow-y-auto pb-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-12">
         <div className="mb-12">
-          <h1 className="text-5xl font-bold text-gray-900 mb-4">Projects</h1>
-          <p className="text-base text-gray-700 leading-relaxed">Playground — Small MVPs to production apps.</p>
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">Projects</h1>
+          <p className="text-sm md:text-base text-gray-700 leading-relaxed">Playground — Small MVPs to production apps.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

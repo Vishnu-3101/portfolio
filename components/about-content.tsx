@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 
 export function AboutContent() {
   return (
-    <main className="ml-[16%] min-h-screen bg-white overflow-y-auto pb-20">
+    <main className="md:ml-[16%] ml-0 min-h-screen bg-white overflow-y-auto pb-20">
       <div className="max-w-3xl mx-auto px-8 py-12">
         <h1 className="text-6xl font-bold text-center mb-2">Aman</h1>
         <div className="text-center uppercase text-gray-600 tracking-wide text-xs mb-3">

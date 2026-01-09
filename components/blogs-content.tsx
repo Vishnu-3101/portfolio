@@ -33,7 +33,7 @@ const posts = [
 
 export function BlogsContent() {
   return (
-    <main className="ml-[16%] min-h-screen bg-white overflow-y-auto pb-20">
+    <main className="md:ml-[16%] ml-0 min-h-screen bg-white overflow-y-auto pb-20">
       <div className="max-w-6xl mx-auto px-8 py-12">
         <div className="mb-8">
           <h1 className="text-5xl font-bold text-gray-900 mb-4">Pensieve</h1>

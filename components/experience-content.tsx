@@ -34,7 +34,7 @@ const experienceEntries = [
 
 export function ExperienceContent() {
   return (
-    <main className="ml-[16%] min-h-screen bg-white overflow-y-auto pb-20">
+    <main className="md:ml-[16%] ml-0 min-h-screen bg-white overflow-y-auto pb-20">
       <div className="max-w-4xl mx-auto px-8 py-12">
         {/* Header */}
         <div className="mb-12">

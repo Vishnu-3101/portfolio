@@ -3,7 +3,7 @@ import { PhoneCall } from "lucide-react";
 
 export function ContactContent() {
   return (
-    <main className="ml-[16%] min-h-screen bg-white overflow-y-auto pb-20 flex items-center justify-center relative">
+    <main className="md:ml-[16%] ml-0 min-h-screen bg-white overflow-y-auto pb-20 flex items-center justify-center relative">
       {/* SVG grid pattern background */}
       <svg
         className="absolute inset-0 w-full h-full opacity-40 pointer-events-none select-none"
