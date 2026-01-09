@@ -62,7 +62,7 @@ export function Sidebar({ activePage = "/" }: SidebarProps) {
   return (
     <> 
       {/* Desktop sidebar */}
-      <aside className="hidden md:fixed md:left-0 md:top-0 md:h-screen md:w-[16%] md:flex md:flex-col overflow-y-auto bg-white border-r border-gray-200">
+      <aside className="hidden md:fixed md:left-0 md:top-0 md:h-screen md:w-[220px] md:min-w-[220px] md:flex-shrink-0 md:flex md:flex-col 2xl:w-[16%] overflow-y-auto bg-white border-r border-gray-200">
         {/* Profile Section */}
         <div className="p-6 border-b border-gray-200">
           <Avatar className="w-20 h-20 mx-auto mb-3">

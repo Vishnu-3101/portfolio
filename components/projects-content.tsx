@@ -32,7 +32,7 @@ const projects = [
 
 export function ProjectsContent() {
   return (
-    <main className="md:ml-[16%] ml-0 min-h-screen bg-white overflow-y-auto pb-20">
+    <main className="md:ml-[220px] 2xl:ml-[16%] ml-0 flex-1 min-h-0 bg-white overflow-y-auto pb-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-12">
         <div className="mb-12">
           <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">Projects</h1>

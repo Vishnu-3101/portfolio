@@ -17,10 +17,10 @@ export default async function BlogPostPage({ params }: Props) {
   if (!post) return notFound();
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen flex flex-col bg-gray-100">
       <Sidebar activePage="/blogs" />
 
-      <main className="md:ml-[16%] ml-0 min-h-screen bg-white overflow-y-auto pb-20">
+      <main className="md:ml-[220px] 2xl:ml-[16%] ml-0 flex-1 min-h-0 bg-white overflow-y-auto pb-20">
         <div className="max-w-4xl mx-auto px-8 py-12">
           <a href="/blogs" className="text-sm text-gray-600 hover:underline">
             ← All Articles

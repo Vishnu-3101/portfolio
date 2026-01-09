@@ -4,7 +4,7 @@ import { Footer } from "@/components/footer";
 
 export default function ToolsPage() {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen flex flex-col bg-gray-100">
       <Sidebar activePage="/tools" />
       <ToolsContent />
       <Footer />
