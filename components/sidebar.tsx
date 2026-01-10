@@ -37,11 +37,11 @@ const navItems = [
 ];
 
 const socialLinks = [
-  { icon: Twitter, label: "X (Twitter)", href: "https://twitter.com", color: "text-black" },
-  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com", color: "text-blue-600" },
+  { icon: Twitter, label: "X (Twitter)", href: "https://x.com/Vishnu_3101", color: "text-black" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/vishnu3101", color: "text-blue-600" },
   { icon: BookOpen, label: "Medium", href: "https://medium.com", color: "text-black" },
-  { icon: Github, label: "Github", href: "https://github.com", color: "text-black" },
-  { icon: Instagram, label: "Instagram", href: "https://instagram.com", color: "text-pink-600" },
+  { icon: Github, label: "Github", href: "https://github.com/Vishnu-3101", color: "text-black" },
+  { icon: Instagram, label: "Instagram", href: "https://instagram.com/vishnu3_1_0_1", color: "text-pink-600" },
 ];
 
 export function Sidebar({ activePage = "/" }: SidebarProps) {
@@ -69,7 +69,7 @@ export function Sidebar({ activePage = "/" }: SidebarProps) {
             <AvatarImage src="/profile.jpg" alt="Profile" />
             <AvatarFallback className="text-2xl">A</AvatarFallback>
           </Avatar>
-          <h2 className="text-xl font-bold text-center">Aman</h2>
+          <h2 className="text-xl font-bold text-center">Vishnu</h2>
           <p className="text-sm text-gray-500 text-center">Problem</p>
         </div>
 
@@ -135,7 +135,7 @@ export function Sidebar({ activePage = "/" }: SidebarProps) {
               <AvatarFallback className="text-lg">A</AvatarFallback>
             </Avatar>
             <div>
-              <h2 className="text-lg font-bold">Aman</h2>
+              <h2 className="text-lg font-bold">Vishnu</h2>
               <p className="text-xs text-gray-500">Problem</p>
             </div>
           </div>
@@ -162,7 +162,7 @@ export function Sidebar({ activePage = "/" }: SidebarProps) {
                   <AvatarFallback className="text-lg">A</AvatarFallback>
                 </Avatar>
                 <div>
-                  <h2 className="text-lg font-bold">Aman</h2>
+                  <h2 className="text-lg font-bold">Vishnu</h2>
                   <p className="text-xs text-gray-500">Problem</p>
                 </div>
               </div>

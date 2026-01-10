@@ -9,9 +9,9 @@ export function MainContent() {
       <div className="max-w-4xl mx-auto px-8 py-12">
         {/* Hero Section */}
         <div className="mb-12">
-          <h1 className="text-5xl font-bold text-gray-900 mb-4">Hey, I&apos;m Aman</h1>
+          <h1 className="text-5xl font-bold text-gray-900 mb-4">Hey, I&apos;m Vishnu</h1>
           <div className="flex items-center gap-2 mb-6">
-            <p className="text-lg text-gray-600">AI Product Engineer</p>
+            <p className="text-lg text-gray-600">Machine Learning Engineer</p>
             <Send className="w-5 h-5 text-yellow-500 fill-yellow-500" />
           </div>
 
@@ -22,7 +22,7 @@ export function MainContent() {
               className="flex items-center gap-2 border border-gray-300 bg-white hover:bg-gray-50 h-auto py-2.5 px-4 text-base"
               asChild
             >
-              <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <Link href="https://x.com/Vishnu_3101" target="_blank" rel="noopener noreferrer">
                 <Twitter className="w-4 h-4" />
                 Connect with me on X
               </Link>
@@ -32,7 +32,7 @@ export function MainContent() {
               className="bg-black text-white hover:bg-gray-800 h-auto py-2.5 px-4 text-base"
               asChild
             >
-              <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <Link href="https://x.com/Vishnu_3101" target="_blank" rel="noopener noreferrer">
                 Follow
               </Link>
             </Button>
@@ -91,7 +91,7 @@ export function MainContent() {
             <p>
               Say Hi on{" "}
               <Link
-                href="https://twitter.com"
+                href="https://x.com/Vishnu_3101"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline"

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { PhoneCall } from "lucide-react";
+import { PhoneCall, Twitter } from "lucide-react";
+import Link from "next/link";
 
 export function ContactContent() {
   return (
@@ -32,17 +33,26 @@ export function ContactContent() {
         <p className="text-lg text-center mb-8 text-gray-700 max-w-xl">
           If you're building in / excited about AI, or just wanna chat, say hi on X!
         </p>
-        <div className="w-full flex items-center justify-center mb-4">
-          <div className="flex gap-2 shadow-xl bg-white rounded-2xl py-2 px-5 border border-gray-200 items-center">
-            <span className="text-2xl">𝕏</span>
-            <span className="font-medium text-base pr-2">Connect with me on X</span>
-            <Button
-              className="px-3 bg-black text-white font-semibold h-8"
-              style={{borderRadius: 9999, minWidth:64, fontSize:'15px'}}
-            >
+        <div className="flex items-center gap-3 mb-4">
+          <Button
+            variant="outline"
+            className="flex items-center gap-2 border border-gray-300 bg-white hover:bg-gray-50 h-auto py-2.5 px-4 text-base"
+            asChild
+          >
+            <Link href="https://x.com/Vishnu_3101" target="_blank" rel="noopener noreferrer">
+              <Twitter className="w-4 h-4 mr-2" />
+              Connect with me on X
+            </Link>
+          </Button>
+          <Button
+            variant="default"
+            className="bg-black text-white hover:bg-gray-800 h-auto py-2.5 px-4 text-base"
+            asChild
+          >
+            <Link href="https://x.com/Vishnu_3101" target="_blank" rel="noopener noreferrer">
               Follow
-            </Button>
-          </div>
+            </Link>
+          </Button>
         </div>
         <Button variant="default" className="bg-black px-6 flex gap-2 text-base mt-5 h-10" asChild>
           <a href="https://cal.com/aman" target="_blank" rel="noopener noreferrer">

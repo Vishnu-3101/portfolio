@@ -22,7 +22,7 @@ export function AboutContent() {
           <section>
             <h2 className="text-xl font-bold">Who I Am</h2>
             <p className="text-gray-800">
-              Hello! I'm Aman, a Bengaluru-based engineer passionate about building tools that simplify people's lives. I’ve been coding since 2018, writing about AI, LLMs, frontend, backend, Rails and databases.
+              Hello! I'm Vishnu, a Bengaluru-based engineer passionate about building tools that simplify people's lives. I’ve been coding since 2018, writing about AI, LLMs, frontend, backend, Rails and databases.
             </p>
           </section>
           <section>
