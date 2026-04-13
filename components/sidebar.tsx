@@ -136,7 +136,7 @@ export function Sidebar({ activePage = "/" }: SidebarProps) {
             </Avatar>
             <div>
               <h2 className="text-lg font-bold">Vishnu</h2>
-              <p className="text-xs text-gray-500">Problem</p>
+              <p className="text-xs text-gray-500">ML Engineer</p>
             </div>
           </div>
 
@@ -163,7 +163,7 @@ export function Sidebar({ activePage = "/" }: SidebarProps) {
                 </Avatar>
                 <div>
                   <h2 className="text-lg font-bold">Vishnu</h2>
-                  <p className="text-xs text-gray-500">Problem</p>
+                  <p className="text-xs text-gray-500">ML Engineer</p>
                 </div>
               </div>
               <button aria-label="Close menu" className="p-2 rounded-md hover:bg-gray-100" onClick={() => setIsOpen(false)}>
