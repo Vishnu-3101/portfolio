@@ -70,7 +70,7 @@ export function Sidebar({ activePage = "/" }: SidebarProps) {
             <AvatarFallback className="text-2xl">A</AvatarFallback>
           </Avatar>
           <h2 className="text-xl font-bold text-center">Vishnu</h2>
-          <p className="text-sm text-gray-500 text-center">Problem</p>
+          <p className="text-sm text-gray-500 text-center">ML Engineer</p>
         </div>
 
         {/* Navigation */}

@@ -2,40 +2,52 @@ import Image from 'next/image';
 
 const tools = [
   {
-    name: "Cursor",
-    icon: "/file.svg",
-    type: "IDE",
-    url: "https://www.cursor.so/"
+    name: "PyTorch",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg",
+    type: "Deep Learning",
+    url: "https://pytorch.org/"
   },
   {
-    name: "ChatGPT",
+    name: "Hugging Face",
+    icon: "https://huggingface.co/front/assets/huggingface_logo.svg",
+    type: "LLMs",
+    url: "https://huggingface.co/"
+  },
+  {
+    name: "Google Cloud (GCP)",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
+    type: "Cloud / MLOps",
+    url: "https://cloud.google.com/"
+  },
+  {
+    name: "BigQuery ML",
     icon: "/globe.svg",
-    type: "Productivity",
-    url: "https://chat.openai.com/"
+    type: "Data / ML Pipelines",
+    url: "https://cloud.google.com/bigquery"
   },
   {
-    name: "Notion",
-    icon: "https://www.notion.so/images/logo-ios.png",
-    type: "Productivity",
-    url: "https://www.notion.so/"
+    name: "Docker",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    type: "Deployment",
+    url: "https://www.docker.com/"
   },
   {
-    name: "Pycharm",
-    icon: "https://resources.jetbrains.com/storage/products/pycharm/img/meta/pycharm_logo_300x300.png",
+    name: "GitHub",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+    type: "Version Control",
+    url: "https://github.com/"
+  },
+  {
+    name: "VS Code",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
     type: "IDE",
-    url: "https://www.jetbrains.com/pycharm/"
+    url: "https://code.visualstudio.com/"
   },
   {
-    name: "Slack",
-    icon: "https://cdn.worldvectorlogo.com/logos/slack-new-logo.svg",
-    type: "Communication",
-    url: "https://slack.com/"
-  },
-  {
-    name: "Medium",
-    icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/medium.svg",
-    type: "Writing",
-    url: "https://medium.com/"
+    name: "Kaggle",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kaggle/kaggle-original.svg",
+    type: "Experimentation",
+    url: "https://www.kaggle.com/"
   }
 ];
 
@@ -43,8 +55,13 @@ export function ToolsContent() {
   return (
     <main className="md:ml-[220px] 2xl:ml-[16%] ml-0 flex-1 min-h-0 bg-white overflow-y-auto pb-20 flex flex-col items-center justify-center">
       <div className="w-full max-w-2xl mx-auto pt-20 text-center">
-        <h1 className="text-5xl font-bold mb-2">Shovels</h1>
-        <p className="mb-10 text-gray-700">Tools I frequently use to make life easier</p>
+        
+        <h1 className="text-5xl font-bold mb-2">Tools I Use</h1>
+
+        <p className="mb-10 text-gray-700">
+          Technologies I use to build, train, and deploy machine learning systems.
+        </p>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 justify-items-center">
           {tools.map((tool) => (
             <a
@@ -64,12 +81,17 @@ export function ToolsContent() {
                 />
               </div>
               <div className="text-left">
-                <div className="font-medium text-lg text-gray-900 mb-1">{tool.name}</div>
-                <div className="text-xs text-gray-500 font-normal">{tool.type}</div>
+                <div className="font-medium text-lg text-gray-900 mb-1">
+                  {tool.name}
+                </div>
+                <div className="text-xs text-gray-500 font-normal">
+                  {tool.type}
+                </div>
               </div>
             </a>
           ))}
         </div>
+
       </div>
     </main>
   );

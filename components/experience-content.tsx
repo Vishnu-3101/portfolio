@@ -2,33 +2,69 @@ import { Timeline } from "@/components/timeline";
 
 const experienceEntries = [
   {
-    id: "kay-ai",
-    dateRange: "Mar 2024 - Present",
-    title: "Founding Engineer",
-    company: "kay.ai",
-    description: "Leading UI/UX for Copilot to automate insurance workflows",
+    id: "quantiphi-fulltime",
+    dateRange: "Jul 2025 - Present",
+    title: "Machine Learning Engineer",
+    company: "Quantiphi",
+    description:
+      "Building production-grade ML systems across LLMs, MLOps pipelines, and applied AI use-cases.",
     bullets: [
-      "Building Copilot for Insurance Industry, leading Frontend and UX.",
-      "Leading UI/UX for Copilot to automate insurance workflows",
-      "Built the Kay Admin App, Client App, and Demo Instance for seamless AI-driven automation.",
-      "Experimenting with emerging AI models, techniques and UX paradigms to enhance usability and system design.",
+      "Developed an ML pipeline to predict gamer churn with 78% precision, enabling targeted retention strategies.",
+      "Finetuned LLMs for de-identification of PHI data from clinical notes, achieving 90% recall with ~0.35s latency per chunk.",
+      "Designed and deployed scalable BQML pipelines for automated ETL and model training within BigQuery.",
+      "Improved inference performance by ~40% through optimized pipeline orchestration and system design.",
     ],
-    technologies: ["React", "Typescript", "Tailwind", "ShadCN", "Python", "LLM"],
+    technologies: [
+      "Python",
+      "PyTorch",
+      "HuggingFace",
+      "GCP",
+      "BigQuery ML",
+      "MLOps",
+    ],
     color: "blue" as const,
   },
   {
-    id: "dreamboat-ai",
-    dateRange: "Feb - Nov 2023",
-    title: "Co-Founder / CTO",
-    company: "DreamboatAI",
-    description: "Designed and developed LLMOps Platform, built multiple LLM apps.",
+    id: "quantiphi-intern",
+    dateRange: "Jan 2025 - Jun 2025",
+    title: "Machine Learning Engineer Intern",
+    company: "Quantiphi",
+    description:
+      "Worked on computer vision systems for real-world broadcast analytics and brand visibility tracking.",
     bullets: [
-      "Led the team for design and development of LLMOps Platform to help monitor, manage, and debug LLM apps following Agile Principles.",
-      "Built a high-performance proxy middleware using Cloudflare Workers, achieving sub-20ms response times.",
-      "Created multiple LLM-Powered Apps: Divedash - Chrome extension suggesting prompt templates for ChatGPT. Almada - Linkedin Icebreaker generator from profile URLs.",
+      "Built a YOLOv11-based object detection system to detect and quantify Paytm logo visibility in cricket broadcasts.",
+      "Achieved 92.2 mAP for logo detection and 96.7% accuracy for visibility classification using VGG16.",
+      "Developed a Streamlit-based interface for automated visual analytics and reporting.",
     ],
-    technologies: ["React", "Typescript", "Rails", "Node", "AWS"],
+    technologies: [
+      "Python",
+      "YOLO",
+      "VGG16",
+      "OpenCV",
+      "Streamlit",
+      "Deep Learning",
+    ],
     color: "purple" as const,
+  },
+  {
+    id: "vit-research",
+    dateRange: "Aug 2023 - Dec 2023",
+    title: "Research Intern",
+    company: "VIT Chennai",
+    description:
+      "Worked on efficient deep learning architectures for plant disease classification.",
+    bullets: [
+      "Designed a dual-track deep learning model combining Swin Transformer and GSRDN for grape leaf disease classification.",
+      "Achieved 98.6% accuracy with ~30% fewer parameters, improving model efficiency.",
+      "Contributed to a peer-reviewed publication in Scientific Reports.",
+    ],
+    technologies: [
+      "PyTorch",
+      "Swin Transformer",
+      "Computer Vision",
+      "Deep Learning",
+    ],
+    color: "green" as const,
   },
 ];
 
@@ -36,16 +72,17 @@ export function ExperienceContent() {
   return (
     <main className="md:ml-[220px] 2xl:ml-[16%] ml-0 flex-1 min-h-0 bg-white overflow-y-auto pb-20">
       <div className="max-w-4xl mx-auto px-8 py-12">
+        
         {/* Header */}
         <div className="mb-12">
           <h1 className="text-5xl font-bold text-gray-900 mb-4">
-            Changelog from my journey
+            My Journey in Building AI Systems
           </h1>
           <p className="text-base text-gray-700 leading-relaxed mb-2">
-            I&apos;ve been working at Kay.ai for the past 1.5 years.
+            I work on building scalable, efficient, and production-ready machine learning systems.
           </p>
           <p className="text-base text-gray-700 leading-relaxed">
-            Here&apos;s a timeline of my journey.
+            Here&apos;s a timeline of my experience across industry and research.
           </p>
         </div>
 
@@ -75,6 +112,7 @@ export function ExperienceContent() {
             </svg>
           </a>
         </div>
+
       </div>
     </main>
   );

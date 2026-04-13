@@ -12,7 +12,7 @@ interface TimelineEntry {
   description?: string;
   bullets: string[];
   technologies: string[];
-  color: "blue" | "purple";
+  color: "blue" | "purple" | "green";
 }
 
 interface TimelineProps {

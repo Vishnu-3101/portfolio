@@ -45,9 +45,9 @@ export function Footer() {
           <ArrowRight className="w-4 h-4" />
         </Link>
 
-        {/* Center: Made by Aman | © Year */}
+        {/* Center: Made by Vishnu | © Year */}
         <div className="text-center">
-          Made by Aman | © {currentYear}
+          Made by Vishnu | © {currentYear}
         </div>
 
         {/* Right: Time */}

@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aman - AI Product Engineer",
-  description: "Portfolio of Aman - AI Product Engineer",
+  title: "Vishnu - Machine Learning Engineer",
+  description: "Portfolio of Vishnu - Machine Learning Engineer",
 };
 
 export default function RootLayout({
