@@ -97,10 +97,11 @@ export function MainContent() {
           </h2>
 
           <BlogCard
-            title="Fully Quantized vs Mixed Precision: What Actually Matters?"
-            description="Breaking down efficiency trade-offs in modern ML systems."
-            href="/blogs/quantization"
-            imageTitle="UNDERSTANDING EFFICIENT ML SYSTEMS"
+            title="AutoDiff Explained: How PyTorch Computes Gradients"
+            description="Breaking down automatic differentiation using computation graphs and backprop."
+            href="/blogs/autodiff"
+            imageTitle="Automatic Differentiation"
+            imageUrl="/blogs/autodiff.png"
             horizontal
           />
         </div>
