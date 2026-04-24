@@ -3,23 +3,28 @@ import { Timeline } from "@/components/timeline";
 const experienceEntries = [
   {
     id: "quantiphi-fulltime",
-    dateRange: "Jul 2025 - Present",
+    dateRange: "Jan 2025 - Present",
     title: "Machine Learning Engineer",
     company: "Quantiphi",
     description:
-      "Building production-grade ML systems across LLMs, MLOps pipelines, and applied AI use-cases.",
+      "Building production-grade GenAI and ML systems across RAG pipelines, LLM applications, and scalable data workflows.",
     bullets: [
-      "Developed an ML pipeline to predict gamer churn with 78% precision, enabling targeted retention strategies.",
-      "Finetuned LLMs for de-identification of PHI data from clinical notes, achieving 90% recall with ~0.35s latency per chunk.",
-      "Designed and deployed scalable BQML pipelines for automated ETL and model training within BigQuery.",
-      "Improved inference performance by ~40% through optimized pipeline orchestration and system design.",
+      "Improved retrieval relevance by ~25–30% by designing a RAG pipeline using AWS Bedrock (Titan v2, OpenSearch) with query decomposition and reranking across ~3,500 Confluence pages.",
+      "Enhanced response quality by ~20% by building conversational memory (STM + LTM) using DynamoDB for multi-turn interactions.",
+      "Owned end-to-end development of a document processing platform handling multi-format inputs across 19 departments and 400+ entities.",
+      "Reduced manual processing effort by ~90–95% with <2 min document processing time via modular extraction, mapping, and validation pipelines.",
+      "Finetuned Qwen-8B LLM for PHI de-identification achieving 90% recall with ~0.35s latency.",
+      "Built scalable BigQuery ML pipelines reducing inference time by ~40% and improving MLOps efficiency.",
     ],
     technologies: [
       "Python",
       "PyTorch",
       "HuggingFace",
-      "GCP",
+      "AWS Bedrock",
+      "OpenSearch",
+      "DynamoDB",
       "BigQuery ML",
+      "RAG",
       "MLOps",
     ],
     color: "blue" as const,
@@ -30,11 +35,11 @@ const experienceEntries = [
     title: "Machine Learning Engineer Intern",
     company: "Quantiphi",
     description:
-      "Worked on computer vision systems for real-world broadcast analytics and brand visibility tracking.",
+      "Worked on computer vision systems for broadcast analytics and brand visibility measurement.",
     bullets: [
-      "Built a YOLOv11-based object detection system to detect and quantify Paytm logo visibility in cricket broadcasts.",
-      "Achieved 92.2 mAP for logo detection and 96.7% accuracy for visibility classification using VGG16.",
-      "Developed a Streamlit-based interface for automated visual analytics and reporting.",
+      "Built a YOLOv11-based detection system to quantify Paytm logo visibility in cricket broadcasts.",
+      "Achieved 92.2 mAP for detection and 96.7% classification accuracy using VGG16.",
+      "Developed a Streamlit interface for automated visual analytics and reporting workflows.",
     ],
     technologies: [
       "Python",
@@ -54,9 +59,9 @@ const experienceEntries = [
     description:
       "Worked on efficient deep learning architectures for plant disease classification.",
     bullets: [
-      "Designed a dual-track deep learning model combining Swin Transformer and GSRDN for grape leaf disease classification.",
-      "Achieved 98.6% accuracy with ~30% fewer parameters, improving model efficiency.",
-      "Contributed to a peer-reviewed publication in Scientific Reports.",
+      "Designed a dual-track model combining Swin Transformer and GSRDN for grape leaf classification.",
+      "Achieved 98.6% accuracy with ~30% fewer parameters, improving efficiency.",
+      "Published work in Scientific Reports.",
     ],
     technologies: [
       "PyTorch",

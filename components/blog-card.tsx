@@ -19,7 +19,7 @@ export function BlogCard({
   imageUrl,
   horizontal = false,
 }: BlogCardProps) {
-  const src = imageUrl ?? `https://picsum.photos/seed/${encodeURIComponent(title)}/1200/800`;
+  const src = imageUrl || `https://picsum.photos/seed/${encodeURIComponent(title)}/1200/800`;
 
   return (
     <Card className="h-full border border-gray-200 hover:shadow-lg transition-shadow bg-white">
@@ -27,8 +27,12 @@ export function BlogCard({
         <div className={`flex flex-col ${horizontal ? 'md:flex-row' : ''} gap-0 items-stretch h-full`}>
           {/* Book Illustration */}
           <div className={`w-full ${horizontal ? 'md:w-40 lg:w-48' : ''} flex-shrink-0 rounded-t-xl ${horizontal ? 'md:rounded-l-xl md:rounded-tr-none' : ''} overflow-hidden`}>
-            <div className={`${horizontal ? 'aspect-[16/9] md:aspect-[3/2]' : 'aspect-[4/3] lg:aspect-[16/9]'} w-full h-full`}>
-              <img src={src} alt={imageTitle} className="w-full h-full object-cover" />
+            <div className={`${horizontal ? 'aspect-[16/9] md:aspect-[3/2]' : 'aspect-[4/3] lg:aspect-[16/9]'}`}>
+              <img
+                src={src}
+                alt={imageTitle}
+                className={`w-full h-full object-cover object-center ${horizontal ? "scale-125" : "scale-110"}`}
+              />
             </div>
           </div>
 
@@ -40,9 +44,11 @@ export function BlogCard({
             </div>
             <Link
               href={href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm text-gray-900 font-medium hover:underline self-end mt-4 inline-flex items-center gap-1"
             >
-              Read more →
+              Read more ↗
             </Link>
           </div>
         </div>

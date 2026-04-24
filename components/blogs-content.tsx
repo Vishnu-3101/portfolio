@@ -2,52 +2,40 @@ import { BlogCard } from "./blog-card";
 
 const posts = [
   {
-    id: "quantization",
-    title: "Fully Quantized vs Mixed Precision: What Actually Matters?",
+    id: "autodiff",
+    title: "AutoDiff Explained: How PyTorch Computes Gradients",
     description:
-      "Breaking down latency, memory, and accuracy trade-offs in real-world ML systems.",
-    href: "/blogs/quantization-vs-mixed-precision",
-    imageTitle: "Efficient ML Systems: Quantization vs Mixed Precision",
+      "Breaking down automatic differentiation using computation graphs and backprop.",
+    href: "https://www.linkedin.com/posts/vishnu3101_machinelearning-deeplearning-autodiff-activity-7322652161597698049-VCGH",
+    imageTitle: "Automatic Differentiation",
+    imageUrl: "/blogs/autodiff.png",
   },
   {
-    id: "rmsnorm",
-    title: "Why RMSNorm Works Better Than LayerNorm in LLMs",
+    id: "transformers-evolution",
+    title: "How Transformers Evolved: From RNNs to Attention",
     description:
-      "Understanding normalization choices in transformers and their impact on stability and efficiency.",
-    href: "/blogs/rmsnorm-vs-layernorm",
-    imageTitle: "RMSNorm vs LayerNorm in LLMs",
+      "Tracing the journey from Seq2Seq to Transformers and modern AI systems.",
+    href: "https://www.linkedin.com/posts/vishnu3101_transformers-attentionisallyouneed-nlp-activity-7316401177070317569-ESR8",
+    imageTitle: "Transformers Evolution",
+    imageUrl: "/blogs/transformers.png",
   },
   {
-    id: "split-learning",
-    title: "Split Learning for LLMs: Training Without Seeing Data",
+    id: "regularization",
+    title: "L1 vs L2 Regularization: Why Only One Creates Sparsity",
     description:
-      "How split learning enables privacy-preserving training and where it fits in modern ML systems.",
-    href: "/blogs/split-learning-llms",
-    imageTitle: "Split Learning for LLMs",
+      "Understanding why L1 drives weights to zero while L2 behaves differently.",
+    href: "https://www.linkedin.com/posts/vishnu3101_machinelearning-regularization-lessexploredtopicsinml-activity-7301288697562349568-jVup",
+    imageTitle: "L1 vs L2 Regularization",
+    imageUrl: "/blogs/regularization.png",
   },
   {
-    id: "llm-systems",
-    title: "From Model to System: What It Takes to Deploy LLMs",
+    id: "yolo",
+    title: "YOLO Demystified: It’s Just a CNN (Almost)",
     description:
-      "Why building LLM applications is more about systems design than model training.",
-    href: "/blogs/llm-systems",
-    imageTitle: "Designing Production-Ready LLM Systems",
-  },
-  {
-    id: "tinyml",
-    title: "Is TinyML Still Relevant in 2026?",
-    description:
-      "Exploring the future of low-resource ML and where efficient models are heading.",
-    href: "/blogs/tinyml-2026",
-    imageTitle: "The Future of TinyML",
-  },
-  {
-    id: "multimodal",
-    title: "Multimodal Learning: Lessons from Bitcoin Prediction",
-    description:
-      "What combining news + time series taught me about real-world ML modeling.",
-    href: "/blogs/multimodal-learning",
-    imageTitle: "Multimodal ML Systems in Practice",
+      "How a simple architectural tweak turns CNNs into object detectors.",
+    href: "https://www.linkedin.com/posts/vishnu3101_leastexploredtopicsinml-yolo-learning-activity-7313815216029372418-S2uE",
+    imageTitle: "YOLO Architecture",
+    imageUrl: "/blogs/yolo.png",
   },
 ];
 
@@ -61,8 +49,8 @@ export function BlogsContent() {
             Writing & Insights
           </h1>
           <p className="text-base text-gray-700 leading-relaxed">
-            Thoughts on building efficient ML systems, LLMs, and real-world AI.  
-            I write about what I build, break, and learn along the way.
+            Thoughts on machine learning, deep learning systems, and first-principles understanding.  
+            I write about what I build, break, and deeply explore.
           </p>
         </div>
 
@@ -74,6 +62,7 @@ export function BlogsContent() {
               description={p.description}
               href={p.href}
               imageTitle={p.imageTitle}
+              imageUrl={p.imageUrl}
             />
           ))}
         </div>

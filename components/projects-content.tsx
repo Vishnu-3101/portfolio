@@ -2,16 +2,28 @@ import { ProjectCard } from "./project-card";
 
 const projects = [
   {
-    id: "split-dora",
-    title: "Split-DoRA: Privacy-Preserving LLM Training",
+    id: "rag-chatbot",
+    title: "Enterprise RAG Chatbot (Confluence → MS Teams)",
     description:
-      "A split learning framework for GPT-2 enabling client-side privacy with DoRA fine-tuning, reducing accuracy gap vs LoRA by 20–30%.",
+      "RAG-based chatbot using Bedrock (Titan v2, OpenSearch) with query decomposition and reranking, improving retrieval relevance by ~25–30% across ~3,500 Confluence pages.",
     href: "#",
     repo: "https://github.com/Vishnu-3101",
-    tags: ["LLMs", "Distributed Training", "DoRA", "Privacy", "PyTorch"],
-    status: "research",
+    tags: ["RAG", "Bedrock", "OpenSearch", "Enterprise AI"],
+    status: "production",
+    imageUrl: "/projects/rag-chatbot.png",
   },
   {
+    id: "qdox",
+    title: "QDOX: Document Processing Platform",
+    description:
+      "End-to-end system for extracting and standardizing financial data from multi-format documents across 19 departments and 400+ entities, reducing manual effort by ~90–95%.",
+    href: "#",
+    repo: "https://github.com/Vishnu-3101",
+    tags: ["Document AI", "Pipelines", "Automation", "ML Systems"],
+    status: "production",
+    imageUrl: "/projects/qdox.png",
+  },
+  { 
     id: "phi-llm",
     title: "PHI De-identification using LLMs",
     description:
@@ -20,6 +32,7 @@ const projects = [
     repo: "https://github.com/Vishnu-3101",
     tags: ["LLMs", "Healthcare AI", "NLP", "HuggingFace"],
     status: "production",
+    imageUrl: "/projects/phi-llm.png",
   },
   {
     id: "churn-prediction",
@@ -30,6 +43,18 @@ const projects = [
     repo: "https://github.com/Vishnu-3101",
     tags: ["MLOps", "BigQuery ML", "Pipelines", "GCP"],
     status: "production",
+    imageUrl: "/projects/churn-prediction.png",
+  },
+  {
+    id: "split-dora",
+    title: "Split-DoRA: Privacy-Preserving LLM Training",
+    description:
+      "A split learning framework for GPT-2 enabling client-side privacy with DoRA fine-tuning, reducing accuracy gap vs LoRA by 20–30%.",
+    href: "#",
+    repo: "https://github.com/Vishnu-3101",
+    tags: ["LLMs", "Distributed Training", "DoRA", "Privacy", "PyTorch"],
+    status: "research",
+    imageUrl: "/projects/split-dora.png",
   },
   {
     id: "bitcoin-forecasting",
@@ -40,16 +65,7 @@ const projects = [
     repo: "https://github.com/Vishnu-3101",
     tags: ["Time Series", "Transformers", "Multimodal", "Finance"],
     status: "research",
-  },
-  {
-    id: "logo-detection",
-    title: "Brand Visibility Detection (YOLO)",
-    description:
-      "YOLOv11-based system to detect Paytm logos in cricket broadcasts, achieving 92.2 mAP and real-time analytics.",
-    href: "#",
-    repo: "https://github.com/Vishnu-3101",
-    tags: ["Computer Vision", "YOLO", "OpenCV", "Deep Learning"],
-    status: "production",
+    imageUrl: "/projects/bitcoin-forecasting.png",
   },
   {
     id: "grape-disease",
@@ -60,6 +76,7 @@ const projects = [
     repo: "https://github.com/Vishnu-3101",
     tags: ["Computer Vision", "Swin Transformer", "Efficiency"],
     status: "research",
+    imageUrl: "/projects/grape-disease.png",
   },
 ];
 
@@ -70,7 +87,7 @@ export function ProjectsContent() {
         
         <div className="mb-12">
           <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-            Selected Work
+            Projects & Research
           </h1>
           <p className="text-sm md:text-base text-gray-700 leading-relaxed">
             Real-world ML systems, research prototypes, and production deployments.
@@ -87,6 +104,7 @@ export function ProjectsContent() {
               repo={p.repo}
               tags={p.tags}
               status={p.status as any}
+              imageUrl={p.imageUrl}
             />
           ))}
         </div>
