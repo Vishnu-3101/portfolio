@@ -69,17 +69,6 @@ export function MainContent() {
             </p>
 
             <p>
-              My work spans <strong>LLM fine-tuning, privacy-preserving AI, computer vision,</strong> 
-              and <strong>MLOps pipelines</strong>. I&apos;ve built systems that improve inference 
-              latency, automate ML workflows, and solve real business problems.
-            </p>
-
-            <p>
-              Recently, I&apos;ve been exploring <strong>low-resource ML</strong>, including 
-              <strong> quantization, split learning, and efficient LLM architectures</strong>.
-            </p>
-
-            <p>
               I enjoy thinking about <strong>how to make AI systems faster, smaller, and deployable</strong>.
             </p>
 
