@@ -88,7 +88,7 @@ export function MainContent() {
           <BlogCard
             title="AutoDiff Explained: How PyTorch Computes Gradients"
             description="Breaking down automatic differentiation using computation graphs and backprop."
-            href="/blogs/autodiff"
+            href="https://www.linkedin.com/posts/vishnu3101_machinelearning-deeplearning-autodiff-activity-7322652161597698049-VCGH"
             imageTitle="Automatic Differentiation"
             imageUrl="/blogs/autodiff.png"
             horizontal
